@@ -11,12 +11,12 @@ public class OrderService {
     OrderRepository orderRepository;
 
     void addOrder(Order order){
-        return orderRepository.addOrder(order);
+         orderRepository.addOrder(order);
     }
     void addPartner(String partner){
-        return orderRepository.addPartner(partner);
+         orderRepository.addPartner(partner);
     }
-    void addOrderPartnerPair(String order,String partner){return orderRepository.addOrderPartnerPair(order,partner);}
+    void addOrderPartnerPair(String order,String partner){ orderRepository.addOrderPartnerPair(order,partner);}
     
     Order getOrderById(String orderId){ return orderRepository.getOrderById(orderId); }
 
