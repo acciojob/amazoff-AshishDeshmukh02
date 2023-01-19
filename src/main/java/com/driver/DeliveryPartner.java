@@ -18,6 +18,14 @@ public class DeliveryPartner {
         return numberOfOrders;
     }
 
+    public void increaseOrders() {
+        ++this.numberOfOrders;
+    }
+
+    public void decreaseOrders() {
+        --this.numberOfOrders;
+    }
+
     public void setNumberOfOrders(Integer numberOfOrders) {
         this.numberOfOrders = numberOfOrders;
     }
