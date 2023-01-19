@@ -10,13 +10,14 @@ public class OrderService {
     @Autowired
     OrderRepository orderRepository;
 
-    boolean addOrder(Order order){
+    void addOrder(Order order){
         return orderRepository.addOrder(order);
     }
-    boolean addPartner(String partner){
+    void addPartner(String partner){
         return orderRepository.addPartner(partner);
     }
-    boolean addOrderPartnerPair(String order,String partner){return orderRepository.addOrderPartnerPair(order,partner);}
+    void addOrderPartnerPair(String order,String partner){return orderRepository.addOrderPartnerPair(order,partner);}
+    
     Order getOrderById(String orderId){ return orderRepository.getOrderById(orderId); }
 
     DeliveryPartner getPartnerById(String partnerId){ return orderRepository.getPartnerById(partnerId); }
